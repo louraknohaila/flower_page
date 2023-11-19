@@ -1,0 +1,153 @@
+body {
+    background-image: radial-gradient(circle, #fde0e0 5%, #f68ca1 95%);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container1 {
+    position: relative;
+    bottom: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.liens span {
+    color: #6d2d3a;
+    margin-right: 10px;
+    transition: color 0.3s, font-size 0.3s, text-decoration 0.6s;
+}
+
+.liens span:hover {
+    cursor: pointer;
+    color: #a71440;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.liens span .home {
+    color: #c9698b;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont1 {
+    position: relative;
+    top: -135px;
+    margin-bottom: 10px;
+}
+
+.soustitre,
+.texte,
+.botton,
+.icones {
+    margin-bottom: 18px;
+}
+
+.titre {
+    position: relative;
+    left: 70px;
+    font-size: 35px;
+    color: #ff5287;
+    color: #754654;
+    font-weight: 700;
+}
+
+.soustitre {
+    position: relative;
+    left: 70px;
+    color: #f68ca1;
+    color: #6d2d3a;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.texte {
+    position: relative;
+    left: 35px;
+    color: #b96a86;
+}
+.version{
+    position : relative;
+    left: 35px;
+    color: #b96a86;
+}
+.botton {
+    position: relative;
+    left: 70px;
+    background-color: #851335;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    width: 180px;
+    height: 22px;
+    transition: background 0.9s, color 0.7s;
+}
+
+.botton:hover {
+    cursor: pointer;
+    background-color: #ff5287;
+}
+
+.cont2 {
+    position: relative;
+    top: -110px;
+    left: 15px;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.maison,
+.tele,
+.message {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #a35d72af;
+}
+.H{
+    position :relative;
+    left:5px;
+    top:2px;
+}
+.T{
+    position :relative;
+    left:2px;
+    top:2px;
+}
+.M{
+    position :relative;
+    left:5px;
+    top:5px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow: auto;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        bottom: 0;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont1 {
+        top: 0;
+    }
+
+    .cont2 {
+        top: 0;
+    }
+}
